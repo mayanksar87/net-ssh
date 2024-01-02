@@ -71,7 +71,7 @@ module Net
             else
               debug { "establishing connection to #{@host}:#{@port}" }
               Socket.tcp(@host, @port, @bind_address, nil,
-                         connect_timeout: 60)
+                         connect_timeout: options[:timeout])
             end
 
           @socket.extend(PacketStream)
