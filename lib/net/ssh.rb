@@ -74,7 +74,7 @@ module Net
       max_win_size send_env set_env use_agent number_of_password_prompts
       append_all_supported_algorithms non_interactive password_prompt
       agent_socket_factory minimum_dh_bits verify_host_key
-      fingerprint_hash check_host_ip
+      fingerprint_hash check_host_ip strict_host_key_checking
     ]
 
     # The standard means of starting a new SSH connection. When used with a
